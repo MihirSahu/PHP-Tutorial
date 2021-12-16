@@ -38,3 +38,25 @@
     - /
     - *
     - %
+- Ex.
+    - `$num = 0`
+    - `$num = $num + 1`
+- Common math functions
+    - abs()
+    - pow()
+    - min(), max()
+    - round()
+    - ceil(), floor()
+
+## Getting User Input
+- The form element can take input from the user and pass it to php
+```
+    <form action="site.php" method="get">
+      Name: <input type="text" name="name">
+      <input type="submit">
+    </form>
+    <?php
+      echo $_GET["name"]
+     ?>
+ ```
+- The input tags are basic html, the part that prints the name is the `echo $_GET["name"]`. It takes the text from the input box with the attribute "name" with the $_GET method and echos it

@@ -9,10 +9,13 @@
   </head>
 
   <body>
-    <?php
-        $characterName = "John";
-        $characterAge = 35;
-        echo("$characterName is $characterAge");
-     ?>
+    <form action="site.php" method="get">
+      Name: <input type="text" name="username">
+      Age: <input type="number" name="age">
+      <input type="submit">
+    </form>
+    Your username is: <?php echo $_GET["username"];?>
+    <br>
+    Your age is: <?php echo $_GET["age"];?>
   </body>
 </html>
